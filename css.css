@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    border: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color:peru;
+    border-radius: 0  0 20px 20px ;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+    padding: 0;
+    background-color: lightslategray;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 40px ;
+    gap: 8px;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+#searchButton {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: yellow;
+    
+}
+
+#searchButton:hover {
+    background-color: blue;
+    color: white;
+}
+
+.error-message {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container {
+    padding: 20px;
+    background-color: lightcyan;
+}
+
+h1 {
+    font-size: 60px;
+    color:red;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: auto;
+}
+
+.book-card {
+    border: 1px solid brown;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    border-radius: 25px 0 ;
+}
+
+.book-card:hover {
+    background-color: #f0f0f0;
+}
+
+#loadMore {
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+#loadMore:hover {
+    background-color: chartreuse;
+    cursor: pointer;
+    color: blue;
+}
+
+#bookDetails {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 40px 0;
+    background-color: #fff;
+    border: 1px solid grey;
+}
+
+.book-details-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+.box {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.box-content {
+    background-color:white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid gray;
+    width: 90%;
+    border-radius: 40px 0 ;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-button {
+    color:black;
+    float: right;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}

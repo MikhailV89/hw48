@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css.css">
+        <title>Домашняя работа</title>
+    </head>
+    <body>
+        <header>
+            <div class="search">
+                <h1>Список книг</h1>
+                <div>
+                    <input type="text" id="searchInput" placeholder="Введіть назву книги">
+                    <button id="searchButton">Пошук</button>
+                </div>
+            </div>        
+        </header> 
+        <div class="container">        
+            <div id="booksList" class="book-list"></div>
+            <div class="error-message"></div> 
+            <button id="loadMore">Завантажити ще</button>
+            <div id="box" class="box">
+                <div class="box-content">
+                    <div>
+                        <span class="close-button">&times;</span>
+                    </div>
+                    <div id="bookDetails" class="book-details-box"></div>
+                </div>
+            </div>
+        <script src="index.js"></script>
+    </body>
+</html>
